@@ -1,16 +1,12 @@
-import pygame
+import pygame,sys
+from datafile import *
+from pygame.locals import *
 
+
+clock = pygame.time.Clock()
 pygame.init()
 
-size = [800,600]
-screen = pygame.display.set_mode(size)
-pygame.display.set_caption("saonline")
+screen = [800,600]
+pygame.display.set_mode(screen)
 
-player_posX = 400
-player_posY = 300
-
-is_right = False
-is_left = False
-
-walkCount = 0
-
+spr_character = SpriteSheet('')
